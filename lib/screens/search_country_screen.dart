@@ -1,4 +1,4 @@
-import 'package:easy_globe/models/country.dart';
+import 'package:easy_globe/services/country_data_service.dart';
 import 'package:flutter/material.dart';
 import 'country_detail_screen.dart';
 
