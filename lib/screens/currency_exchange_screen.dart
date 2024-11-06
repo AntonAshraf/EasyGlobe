@@ -79,7 +79,7 @@ class _CurrencyExchangeScreenState extends State<CurrencyExchangeScreen> {
                         style: TextStyle(
                             fontSize: 22,
                             fontWeight: FontWeight.bold,
-                            color: Colors.deepPurple),
+                            color: Colors.blue),
                       ),
                       const SizedBox(height: 10),
                       DropdownButton<String>(
@@ -124,7 +124,7 @@ class _CurrencyExchangeScreenState extends State<CurrencyExchangeScreen> {
                         style: TextStyle(
                             fontSize: 22,
                             fontWeight: FontWeight.bold,
-                            color: Colors.deepPurple),
+                            color: Colors.blue),
                       ),
                       const SizedBox(height: 10),
                       Text(
@@ -140,8 +140,8 @@ class _CurrencyExchangeScreenState extends State<CurrencyExchangeScreen> {
               const SizedBox(height: 20),
               ElevatedButton.icon(
                 onPressed: fetchExchangeRate,
-                icon: const Icon(Icons.refresh, color: Colors.white),
-                label: const Text("Refresh Rate"),
+                icon: const Icon(Icons.refresh, color: Colors.blue),
+                label: const Text("Refresh Rate",style: TextStyle(color: Colors.blue)),
                 style: ElevatedButton.styleFrom(
                   padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
                   shape: RoundedRectangleBorder(

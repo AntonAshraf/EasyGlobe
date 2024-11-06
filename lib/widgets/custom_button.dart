@@ -21,10 +21,10 @@ class CustomButton extends StatelessWidget {
           MaterialPageRoute(builder: (context) => screen),
         );
       },
-      icon: Icon(icon, size: 32.0), // Increase icon size
+      icon: Icon(icon, size: 32.0,color: Colors.blue,), // Increase icon size
       label: Text(
         text,
-        style: const TextStyle(fontSize: 20.0), // Increase text size
+        style: const TextStyle(fontSize: 20.0,color: Colors.blue), // Increase text size
       ),
       style: ElevatedButton.styleFrom(
         padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 16.0), // Increase padding

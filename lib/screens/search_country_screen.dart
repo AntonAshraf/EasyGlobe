@@ -67,7 +67,9 @@ class _SearchCountryScreenState extends State<SearchCountryScreen> {
               controller: _searchController,
               decoration: const InputDecoration(
                 labelText: 'Enter country name',
+                labelStyle: TextStyle(color: Colors.black54),
                 border: OutlineInputBorder(),
+                focusedBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.blue)),
                 suffixIcon: Icon(Icons.search),
               ),
               onSubmitted: (_) => _searchCountry(),
@@ -78,7 +80,7 @@ class _SearchCountryScreenState extends State<SearchCountryScreen> {
             else
               ElevatedButton(
                 onPressed: _searchCountry,
-                child: const Text('Search'),
+                child: const Text('Search',style: TextStyle(color: Colors.blue),),
               ),
             if (_errorMessage != null) ...[
               const SizedBox(height: 20),

@@ -1,6 +1,7 @@
 import 'package:easy_globe/screens/currency_exchange_screen.dart';
 import 'package:easy_globe/widgets/custom_button.dart';
 import 'package:easy_globe/screens/empty_screen.dart';
+import 'package:easy_globe/screens/about_screen.dart';
 import 'package:easy_globe/screens/search_country_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -32,13 +33,13 @@ class HomeScreen extends StatelessWidget {
                 text: 'Country Info',
                 screen: SearchCountryScreen()),
             const SizedBox(height: 20),
-             CustomButton(
+             const CustomButton(
                 icon: Icons.money,
                 text: 'Exchange Rates',
                 screen: CurrencyExchangeScreen()),
             const SizedBox(height: 20),
             const CustomButton(
-                icon: Icons.info, text: 'About', screen: EmptyScreen()),
+                icon: Icons.info, text: 'About', screen: AboutScreen()),
           ],
         ),
       ),
